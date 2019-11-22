@@ -6,8 +6,8 @@ const request = require('request');
 const PORT = ${PORT};
 const HOST = '0.0.0.0';
 const ZABBIX_HOST = "http://monitor3.wisers.com/zabbix"
-const ZABBIX_USERNAME = "${USERNAME}"
-const ZABBIX_PASSWORD ="${PASSWORD}"
+const ZABBIX_USERNAME = "${ZABBIX_USERNAME}"
+const ZABBIX_PASSWORD ="${ZABBIX_PASSWORD}"
 // App
 const app = express();
 
