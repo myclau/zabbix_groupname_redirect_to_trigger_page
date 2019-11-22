@@ -77,10 +77,9 @@ app.get('/:groupname',(req, res) => {
                         var groupid = response.body.result[0].groupid
                         console.log('groupid: ',groupid);
                         req.gid=groupid
-                        var resulturl =  ZABBIX_API_URL+'/tr_status.php?groupid='+groupid+'&hostid=0&show_triggers=1'
+                        var resulturl =  ZABBIX_HOST+'/tr_status.php?groupid='+groupid+'&hostid=0&show_triggers=1'
 
                         console.log('resulturl: ',resulturl);
-                        var html = '<html><head><meta http-equiv="Refresh" content="0; url="'+resulturl+'" /></head></html>'
 			res.redirect(resulturl);
                 }else{
                         console.log('Error: ',error);
